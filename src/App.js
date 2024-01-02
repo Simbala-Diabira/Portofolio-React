@@ -1,25 +1,20 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class MonComposant extends React.Component {
+  monBouton = () =>{
+    alert("Le bouton à été cliquer");
+  }
+
+  render() {
+    return (
+      <div className='content'>
+        <h1>Mon Premier Composant React</h1>
+        <p className="mon-style">Bienvenue sur React App!</p>
+        <button onClick={this.monBouton}>Cliquez ici</button>
+      </div>
+    );
+  }
 }
 
-export default App;
+export default MonComposant;

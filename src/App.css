@@ -1,4 +1,29 @@
-.App {
+body{
+  background-color: lightblue;
+}
+.content{
+  text-align: center;
+  background-color: rgba(0, 0, 255, 0.541);
+  color: white;
+  margin-top: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +60,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
